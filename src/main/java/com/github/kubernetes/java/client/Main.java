@@ -159,6 +159,7 @@ public class Main {
         Service service = new Service();
         service.setId("githubfrontend");
         service.setPort(9999);
+        service.setContainerPort(80);
         selector = new Selector();
         selector.setName("frontend");
         service.setSelector(selector);
